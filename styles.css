@@ -1,0 +1,30 @@
+/*** BASE STYLES ***/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+  
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+  
+/*** FLEX STYLES - to be completed later ***/
+
+.wrapper {
+    /*display: flex;
+    flex-flow: row wrap;
+    justify-content: center;*/
+}
+
+/*** ELEMENT STYLES ***/
+
+button {
+    background-color: ;
+    border: 2px solid rgb();
+}
+
+button:hover {
+    cursor: pointer;
+}
