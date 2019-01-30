@@ -12,7 +12,16 @@ body {
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
 }
-  
+
+p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+ul li {
+    list-style-type: none;
+}
+
 /*** FLEX STYLES - to be completed later ***/
 
 .wrapper {
