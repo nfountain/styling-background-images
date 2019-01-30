@@ -1,6 +1,9 @@
 /*** BASE STYLES ***/
 
 body {
+    margin: 0;
+    padding: 0;
+    background: rgb(214, 213, 179);
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-align: center;
@@ -13,6 +16,9 @@ h1, h2, h3 {
 /*** FLEX STYLES - to be completed later ***/
 
 .wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    background: rgba(214, 213, 179, 0.5);
     /*display: flex;
     flex-flow: row wrap;
     justify-content: center;*/
@@ -21,8 +27,12 @@ h1, h2, h3 {
 /*** ELEMENT STYLES ***/
 
 button {
-    background-color: ;
-    border: 2px solid rgb();
+    margin: 0.8em;
+    padding: 0.5em;
+    font-size: 1.25em;
+    background-color: rgb(126, 183, 127);
+    border: 2px solid rgb(96, 146, 97);
+    border-radius: 10%;
 }
 
 button:hover {
