@@ -2,13 +2,15 @@
 
 var bttnFullScreen = document.getElementById('full-screen');
 var bttnRepeatImg = document.getElementById('repeat');
+var bodyStyle = document.body.style;
 var isVisible = false;
 
 var setFullScrn = function () {
     var loadImg = function () {
         bttnFullScreen.innerText = "Loading Image";
         isVisible = true;
-        document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1548620848-d375c7919ea2?ixlib=rb-1.2.1&auto=format&fit=crop&w=7s50&q=80')";
+        bodyStyle.background = "url('https://images.unsplash.com/photo-1548620848-d375c7919ea2?ixlib=rb-1.2.1&auto=format&fit=crop&w=7s50&q=80') no-repeat center center fixed";
+        bodyStyle.backgroundSize = "cover";
         console.log(isVisible);
     }
     loadImg();
