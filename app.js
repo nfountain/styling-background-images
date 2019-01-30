@@ -3,6 +3,7 @@
 var bttnFullScreen = document.getElementById('full-screen');
 var bttnRepeatImg = document.getElementById('repeat');
 var bodyStyle = document.body.style;
+var container = document.getElementById('container');
 var isVisible = false;
 
 var setFullScrn = function () {
@@ -19,10 +20,26 @@ var setFullScrn = function () {
     }, 500);
 };
 
+var setRepeatImg = function () {
+    var loadImg = function () {
+        bttnRepeatImg.innerText = "Loading Image";
+        isVisible = true;
+        bodyStyle.backgroundImage = "url('https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736877_960_720.jpg')";
+        bodyStyle.backgroundSize = "300px auto";
+        bodyStyle.backgroundRepeat = "repeat";
+        console.log(isVisible);
+    }
+    loadImg();
+    setTimeout(function () {
+        bttnRepeatImg.innerText = "Repeating Image";
+    }, 500);
+    container.style.backgroundColor = "rgba(214, 213, 179, 0.9)";
+};
+
 // Event Listeners
 
 bttnFullScreen.addEventListener('click', setFullScrn);
-
+bttnRepeatImg.addEventListener('click', setRepeatImg);
 
 /*
 TODO: change function of button to hide the image, as well. (And change the setTimeout bttnFullScreen.innerText = "Full Screen Image" to say "Hide Image".)
