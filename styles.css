@@ -3,22 +3,25 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(214, 213, 179);
+    background: #00a599;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    text-align: center;
 }
   
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
 }
 
-p {
+p, li {
     font-size: 1.25em;
     line-height: 1.5em;
 }
 
-ul li {
+ul {
+    padding-left: 0;
+}
+
+li {
     list-style-type: none;
 }
 
@@ -28,26 +31,66 @@ ul li {
     margin: 0 auto;
     max-width: 1200px;
     background: rgba(214, 213, 179, 0.7);
-    /*display: flex;
+    /* display: flex;
     flex-flow: row wrap;
-    justify-content: center;*/
+    justify-content: center; */
 }
 
-/*** ELEMENT STYLES ***/
+header, main, section, footer {
+    padding: 1em;
+    /* display: flex;
+    flex-flow: row wrap; */
+    /* justify-content: flex-start; */
+}
+
+/*** HEADER STYLES ***/
+
+header {
+    color: rgb(255, 255, 255);
+    background-image: url(https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80);
+}
+
+/* Photo by Anna Kolosyuk on Unsplash. */
+
+h1 {
+    padding-top: 2%;
+}
+
+/*** MAIN STYLES ***/
 
 button {
     margin: 0.8em;
     padding: 0.5em;
     font-size: 1.25em;
     background-color: rgb(126, 183, 127);
-    border: 2px solid rgb(96, 146, 97);
-    border-radius: 10%;
+    border: 1px solid rgba(96, 146, 97, 0.3);
+    border-radius: 0.8em;
+    box-shadow: 0 4px 8px 0 rgba(96, 146, 97, 0.2), 0 2px 10px 0 rgba(96, 146, 97, 0.19);
 }
 
 button:hover {
     cursor: pointer;
+    border: 2px solid rgba(96, 146, 97, 0.5);
 }
 
-.description {
-    visibility: hidden;
+/*** REFERENCE STYLES ***/
+
+#reference {
+    background-image: url(https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);
+    background-size: contain;
+    height: 20em;
+}
+
+/* Photo by Plush Design Studio on Unsplash */
+
+/*** CREDITS STYLES ***/
+
+#credits p, #credits li {
+    font-size: 1em;
+}
+
+/*** FOOTER STYLES ***/
+
+footer p {
+    font-size: 1em;
 }
