@@ -48,8 +48,8 @@ bttnFullScreen.addEventListener('click', setFullScrn);
 bttnRepeatImg.addEventListener('click', setRepeatImg);
 
 /*
-TODO: change function of button to hide the image, as well. (And change the setTimeout bttnFullScreen.innerText = "Full Screen Image" to say "Hide Image".)
-TODO: Turn button function into a factory object and create a new object for each button, passing the parameters of the image/styling
+CANDO: add a button function that will hide the image, as well. (And change the setTimeout bttnFullScreen.innerText = "Full Screen Image" to say "Hide Image".)
+MORE LEARNING/PRACTICE: Turn button function into a factory object and create a new object for each button, passing the parameters of the image/styling
 // Return to default attempt
 var clickToHide = function () {
     bttnFullScreen.innerText = "Full Screen Image";
