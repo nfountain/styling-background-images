@@ -14,7 +14,7 @@ var setFullScrn = function () {
         isVisible = true;
         header.style.backgroundImage = "none";
         refSection.style.backgroundImage = "none";
-        bodyStyle.background = "url('https://images.unsplash.com/photo-1548620848-d375c7919ea2?ixlib=rb-1.2.1&auto=format&fit=crop&w=7s50&q=80') no-repeat center center fixed";
+        bodyStyle.background = "url('images/andreea-popa-1327283-unsplash.jpg') no-repeat center center fixed";
         bodyStyle.backgroundSize = "cover";
         console.log(isVisible);
     }
@@ -30,7 +30,7 @@ var setRepeatImg = function () {
         isVisible = true;
         header.style.backgroundImage = "none";
         refSection.style.backgroundImage = "none";
-        bodyStyle.backgroundImage = "url('https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736877_960_720.jpg')";
+        bodyStyle.backgroundImage = "url('images/tree-736877_1280.jpg')";
         bodyStyle.backgroundSize = "300px auto";
         bodyStyle.backgroundRepeat = "repeat";
         console.log(isVisible);
